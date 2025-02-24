@@ -8,7 +8,7 @@ const Main = ( ) =>{
 
     const [selectedLanguage, setSelectedLanguage] = useState( null )
 
-    const rederLanguage = () => languages.map((language) =>{
+    const renderLanguage = () => languages.map((language) =>{
 
         const active = selectedLanguage === language 
 
@@ -19,7 +19,7 @@ const Main = ( ) =>{
 
     })
 
-    const rederSelectedLanguage = () => {
+    const renderSelectedLanguage = () => {
         if(!selectedLanguage) return <h3>Nessun linguaggio selezionato</h3>
 
         const {title, description} = selectedLanguage
@@ -34,10 +34,10 @@ const Main = ( ) =>{
 
         <main className="container">
             <div className="mb-4">
-                {rederLanguage()}
+                {renderLanguage() }
             </div>
             <div>
-                {rederSelectedLanguage()}
+                {renderSelectedLanguage() }
             </div>
 
         </main>

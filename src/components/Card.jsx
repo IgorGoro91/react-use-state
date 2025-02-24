@@ -1,4 +1,4 @@
-const Card = (title,  description) => {
+const Card = ({title,  description}) => {
     return(
         <div className="card">
             <div className="card.body">
